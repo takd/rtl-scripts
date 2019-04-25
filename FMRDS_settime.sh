@@ -1,6 +1,6 @@
 #!/bin/bash
 if (( $EUID != 0 )); then
-    echo "Please run as root"
+    echo "To set the time, this script needs to be run as root."
     exit
 fi
 freq=${1:-95.8M} # 95.8 MHz is the default, but can be changed
